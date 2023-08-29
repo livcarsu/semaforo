@@ -39,6 +39,8 @@ for (const botao of botoes) {
     }
                     
     else{
+        clearInterval(intervalid);
+        automaticoAtivo = false;
         img.setAttribute("src", `./img/${botao.id}.png`)
     }  
 } );
